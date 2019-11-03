@@ -34,7 +34,7 @@ if __name__ == "__main__":
         attribute_binned_values, bins = pd.cut(data[attribute], attribute_quantile_values_array, labels=attribute_quantile_labels[1:], retbins=True, include_lowest=True)
         # print(bins)
         # print(attribute_binned_values)
-        data["{}_Binned".format(attribute)] = attribute_binned_values
+        data[attribute] = attribute_binned_values
         # attribute_binned_values = pd.cut(data[attribute], attribute_quantile_values.round(3), labels=bins[1:])
         # print(bins)
         # print(attribute_binned_values.to_numpy())
